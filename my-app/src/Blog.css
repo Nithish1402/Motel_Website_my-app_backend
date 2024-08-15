@@ -1,0 +1,128 @@
+#blogBody {
+  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  margin: 0;
+  background-image: linear-gradient(to left, rgb(40, 250, 187), rgb(1, 24, 37));
+}
+
+.header {
+  margin: 0;
+  margin-top: 0.1cm;
+  margin-left: 0.1cm;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.header:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trapezoidal-box {
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  border: none;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.trapezoidal-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.trapezoidal-box:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 20px solid;
+  z-index: -1;
+}
+
+.box1 {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.box1:before {
+  border-bottom-color: #3498db;
+}
+
+.box2 {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.box2:before {
+  border-bottom-color: #e74c3c;
+}
+
+.box3 {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.box3:before {
+  border-bottom-color: #2ecc71;
+}
+
+.box4 {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.box4:before {
+  border-bottom-color: #f39c12;
+}
+
+.box5 {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.box5:before {
+  border-bottom-color: #9b59b6;
+}
+
+.trapezoidal-box h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.trapezoidal-box p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.emoji {
+  font-size: 4em; /* Adjust size as needed */
+  margin-bottom: 15px;
+}

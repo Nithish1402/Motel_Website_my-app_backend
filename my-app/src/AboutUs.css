@@ -1,0 +1,60 @@
+.img-container {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  height: 80%;
+  width: 91%;
+  background-image: linear-gradient(to right, #bbd2c5, #536976);
+  border-radius: 18px;
+  margin-top: 15%;
+  margin-left: 30px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+body {
+  background-image: linear-gradient(#bbd2c5, #536976, #292e49);
+}
+
+.img-container img {
+  width: 240px;
+  height: 240px;
+  transition: 1s;
+}
+.img1,
+.img3,
+.img5 {
+  rotate: 30deg;
+}
+.img2,
+.img4 {
+  rotate: -30deg;
+}
+
+.img-container img:hover {
+  scale: 1.2;
+  rotate: 0deg;
+}
+
+.img-container p {
+  font-weight: bolder;
+  font-size: 25px;
+  width: 70%;
+  position: relative;
+  left: 25%;
+  top: 3cm;
+  transition: hover 2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.abt {
+  font-size: 35px;
+  position: absolute;
+  top: 3.4cm;
+  left: 42%;
+}
